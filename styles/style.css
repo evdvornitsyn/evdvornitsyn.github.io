@@ -1,0 +1,1056 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url(fonts/PTSans-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham Pro";
+    src: url(fonts/gothampro_black.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Gotham Pro Regular";
+    src: url(fonts/gothampro.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Yomogi Regular";
+    src: url(fonts/Yomogi-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Nanum Gothic Coding";
+    src: url(/fonts/NanumGothicCoding-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto Condensed-Regular";
+    src: url(/fonts/RobotoCondensed-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+html {
+    scroll-behavior: smooth;
+}
+.page {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-size: 16px;
+    background-color: #14151D;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+.body_hide {
+    opacity: 0;
+	transition: .9s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+.page_block {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: min-content auto auto min-content min-content min-content auto auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+header {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #edecec;
+    filter: saturate(130%);
+    min-width: 320px;
+    max-width: auto;
+    min-height: 100%;
+}
+.name_foto {
+    display: none;
+}
+.fon_silver {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+}
+.logo_deal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+/*Добавляю всплывающие буквы*/
+.qw {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qe {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qr {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qt {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qy {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qu {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qi {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qo {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qp {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qa {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qs {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qd {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qf {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qg {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qh {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qj {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qk {
+    opacity: 0;
+    transition: 0.4s;
+}
+.ql {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qz {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qx {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qc {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qv {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qb {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qn {
+    opacity: 0;
+    transition: 0.4s;
+}
+.qm {
+    opacity: 0;
+    transition: 0.4s;
+}
+.wq {
+    opacity: 0;
+    transition: 0.4s;
+}
+.ww {
+    opacity: 0;
+    transition: 0.4s;
+}
+.we {
+    opacity: 0;
+    transition: 0.4s;
+}
+.wr {
+    opacity: 0;
+    transition: 0.4s;
+}
+.ww_visible {
+    opacity: 1;
+}
+
+
+.name {
+    text-align: center;
+    margin-left: 5%;
+    padding: 0;
+}
+.name_text {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.name_text_two {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    Letter-spacing: 2px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.navigation_block {
+    margin: 0;
+    padding: 10px;
+    width: 30%;
+}
+.navigation_list {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    min-width: 100%;
+    margin: 20px;
+}
+.navigation_item {
+    width: 30%;
+    height: 40px;
+    list-style: none;
+    padding: auto auto auto auto;
+    margin: 0;
+}
+.item_fon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.images_gold_fon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 22px;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.navigation_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dop_span {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin: 2%;
+}
+.link_text {
+    color: #edecec;
+    filter: saturate(130%);
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 17px;
+}
+.watsap_block {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-size: 20px;
+    padding: 0;
+    width: 18%;
+    margin-right: 5%;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.gold_fon {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+}
+.watsap_img {
+    min-width: auto;
+    max-width: 82px;
+    min-height: auto;
+    max-height: 46px;
+    filter: brightness(150%);
+    margin: 2% 0;
+}
+
+.logo_block {
+    grid-column: 1/6;
+    grid-row: 2/4;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 60% min-content;
+    margin: 0;
+    padding: 0;
+}
+.kras_img {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.block_city_logo {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.evgen_img {
+    display: none;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    min-width: auto;
+    max-width: 100%;
+    min-height: auto;
+    max-height: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+.information_block {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    grid-column: 1/6;
+    grid-row: 4/5;
+    text-align: center;
+    color: #edecec;
+    padding-top: 40px;
+}
+.city_logo_text {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #edecec;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+}
+.grid_info {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto min-content auto;
+    margin: 0;
+}
+.slider {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: relative;
+    width: 800px;
+    margin: 20px auto;
+    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+    user-select: none;
+    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+    touch-action: pan-y;
+}
+  
+  /* Если где-то внутри слайдера будут изображения,
+  то нужно задать им pointer-events: none,
+  чтобы они не перетаскивались мышью */
+  
+.slider img {
+    pointer-events: none;
+}
+  
+.slider-list {
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+  
+.slider-list.grab {
+    cursor: grab;
+}
+  
+.slider-list.grabbing{
+    cursor: grabbing;
+}
+  
+  .slider-track {
+    display: flex;
+}
+  
+.slide {
+    width: 800px;
+    height: 400px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.slide_img {
+    width: 100%;
+}
+  
+.slider-arrows {
+    margin-top: 15px;
+    text-align: center;
+}
+  
+.next,
+.prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #edecec;
+}
+  
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+.information_heading {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #edecec;
+    filter: saturate(130%);
+    margin-top: 4%;
+}
+.box_block {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.box_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: min-content;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.box {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.border_box_one {
+    margin: 20px auto;
+    padding: 0;
+    width: 70%;
+    height: 50%;
+    position: relative;
+}
+.border_box_two {
+    margin: 20px auto;
+    padding: 0;
+    width: 70%;
+    height: 50%;
+    position: relative;
+}
+.border_box_free {
+    margin: 20px auto;
+    padding: 0;
+    width: 70%;
+    height: 50%;
+    position: relative;
+}
+.background_gold {
+    width: 100%;
+    min-height: auto;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.oclock_text {
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.many_text {
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.serdce_text {
+    font-weight: 700;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.box_text {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    color: #edecec;
+    font-size: 16px;
+    padding: 0 15%;
+}
+.oclock_img {
+    min-width: 40%;
+}
+.many_img {
+    min-width: 5%;
+    min-height: 2%;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.serdce_img {
+    min-width: 40%; 
+}
+.info_me {
+    grid-column: 1/6;
+    grid-row: 5/6;
+    text-align: center;
+}
+.box_me {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 5% 10% 5% 10%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    position: relative;
+}
+.fon_silver_box {
+    border-radius: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.me_heading {
+    font-weight: 400;
+    color: #000000;
+    filter: saturate(130%);
+    margin-top: 0;
+}
+.text_me {
+    color: #000000;
+    font-size: 20px;
+}
+.job {
+    grid-column: 1/6;
+    grid-row: 6/7;
+}
+.main_contacts {
+    grid-column: 1/6;
+    grid-row: 7/8;
+    text-align: center;
+    min-width: 100%;
+    margin-top: 5%;
+}
+.contacts_heading {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    color: #edecec;
+    filter: saturate(130%);
+}
+.box_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 4%;
+    padding: 0;
+    position: relative;
+    color: #000000;
+}
+.contacts_list {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+.contacts {
+    color: #000000;
+}
+.color_white {
+    color: #edecec;
+}
+.contacts_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 2%;
+    padding: 0 15px 0 15px;
+    position: relative;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 5px;
+}
+.tel_contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.whatsapp_button {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-size: 22px;
+    background-color: #2F3232;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    padding: 0;
+    width: 50%;
+}
+.dop_img {
+    margin: 0;
+}
+.link_dop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.form_mail_to {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    grid-column: 1/6;
+    grid-row: 8/9;
+    text-align: center;
+    color:#edecec;
+}
+.text_heading_form {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+}
+.form_box {
+    width: 80%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.form_item {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #edecec;
+    border: 1px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.button_form {
+    font-family: "Roboto Condensed-Regular", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+@media (min-width: 600px) {
+    .information_block {
+        margin-top: -15%;
+
+    }
+    .logo_block {
+        width: 100%;
+        margin: 3% auto;
+    }
+    .kras_img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .fon_silver_box {
+        height: 100%;
+    }
+    .fon_silver_contacts {
+        height: 100%;
+    }
+
+}
+@media (max-width: 600px) {
+    .page {
+        min-width: 300px;
+        max-width: 400px;
+        margin: 0;
+    }
+    .page_bloc {
+        grid-template-rows: min-content min-content auto min-content min-content min-content auto auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .name_foto {
+        display: block;
+        text-align: center;
+        padding: 5%;
+        position: relative;
+        height: auto;
+
+    }
+    .foto_mobile_evgen {
+        width: 50%;
+        border: 2px solid #3b383870;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+        transition: 1.2s;
+    }
+    .foto_mobile_border {
+        box-shadow: 0 0 25px 10px rgba(0,0,0,0.5);
+    }
+    .deal_text {
+        margin-top: 0;
+        color: #edecec;
+        font-size: 18px;
+    }
+    .name {
+        order: -1;
+        margin: 0;
+    }
+    .evgen_img {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        min-width: 100%;
+    }
+    .navigation_block {
+        font-size: 16px;
+        min-width: 60%;
+        margin-top: 10px;
+    }
+    .navigation_list {
+        font-size: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+    .one_link_text {
+        opacity: 0;
+        transition-duration: 1.2s;
+    }
+    .two_link_text {
+        opacity: 0;
+        transition-duration: 1.2s;
+    }
+    .three_link_text {
+        opacity: 0;
+        transition-duration: 1.2s;
+    }
+    .dop_span {
+        opacity: 0;
+        transition-duration: 1.2s;
+    }
+    .text_button_active {
+        opacity: 1;
+    }
+    .transform_one {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 0;
+        height: 0;
+        text-align: center;
+        transition-duration: 1s;
+    }
+    .transform_two {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 0;
+        height: 0;
+        text-align: center;
+        transition-duration: 1s;
+    }
+    .transform_three {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 0;
+        height: 0;
+        text-align: center;
+        transition-duration: 1s;
+    }
+    .navigation_item_active {
+        width: 100%;
+        height: 40px;
+
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 200px min-content;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    .logo_block {
+        padding-top: 40px;
+    }
+    .kras_img {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        min-height: 100%;
+        max-height: auto;
+    }
+    .block_city_logo {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .city_logo_text {
+        font-family: "Roboto Condensed-Regular", sans-serif;
+        margin: 2% 5%;
+        text-align: center;
+    }
+    .watsap_block {
+        font-size: 16px;
+        width: 0;
+        margin: 0 0 4% 0;
+        transition-duration: 1s;
+    }
+    .watsap_block_active {
+        width: 60%;
+        height: 50px;
+    }
+    .name_text {
+        font-size: 24px;
+    }
+    .box {
+        margin-bottom: 40px;
+    }
+    .box_grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: min-content;
+    }
+    .slider {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+        user-select: none;
+        /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+        touch-action: pan-y;
+    }
+      
+      /* Если где-то внутри слайдера будут изображения,
+      то нужно задать им pointer-events: none,
+      чтобы они не перетаскивались мышью */
+      
+    .slider img {
+        pointer-events: none;
+    }
+      
+    .slider-list {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+      
+    .slider-list.grab {
+        cursor: grab;
+    }
+      
+    .slider-list.grabbing{
+        cursor: grabbing;
+    }
+      
+      .slider-track {
+        display: flex;
+    }
+      
+    .slide {
+        width: 100%;
+        /* Чтобы слайды не сжимались */
+        flex-shrink: 0;
+        /* Увеличиваем и центрируем цифру внутри слайда */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    .slide_img {
+        width: 100%;
+    }
+      
+    .slider-arrows {
+        margin-top: 15px;
+        text-align: center;
+    }
+      
+    .next,
+    .prev {
+        background: none;
+        border: none;
+        margin: 0 10px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #edecec;
+    }
+      
+    .next.disabled,
+    .prev.disabled {
+        opacity: .25;
+        pointer-events: none;
+    }
+    .information_heading {
+        font-size: 20px;
+        margin: 4% 4% 0 4%;
+    }
+    .grid_info {
+        margin: 0;
+        position: relative;
+    }
+    .info_me {
+        font-family: "Roboto Condensed-Regular", sans-serif;
+        margin-top: 0;
+        padding: 0;
+    }
+    .job {
+        padding-top: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .whatsapp_button {
+        min-width: 74%;
+    }
+    .contacts_list {
+        font-size: 18px;
+        min-width: 80%;
+        max-width: auto;
+        margin-bottom: 4%;
+    }
+    .main_contacts {
+        margin-bottom: 50px;
+    }
+    .box {
+        width: 90%;
+    }
+    .border_box_one {
+        margin: 20px auto;
+        padding: 0;
+        width: 80%;
+        height: 140px;
+    }
+    .border_box_two {
+        margin: 20px auto;
+        padding: 0;
+        width: 70%;
+        height: 140px;
+    }
+    .border_box_free {
+        margin: 20px auto;
+        padding: 0;
+        width: 70%;
+        height: 140px;
+    }
+    .form_item {
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
