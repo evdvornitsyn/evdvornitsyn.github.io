@@ -57,7 +57,7 @@ html {
     font-size: 16px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: min-content auto auto min-content min-content min-content auto auto;
+    grid-template-rows: min-content auto auto min-content min-content min-content auto;
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -313,6 +313,12 @@ a {
     padding: 0;
     text-align: center;
     position: relative;
+    background-color: none;
+    transition: 2s linear;
+}
+.yellow_color {
+    background-color: #ffea19;
+    border-radius: 30px;
 }
 .gold_fon {
     position: absolute;
@@ -695,47 +701,6 @@ a {
     align-items: center;
     height: 100%;
     width: 100%;
-}
-.form_mail_to {
-    font-family: "Roboto Condensed-Regular", sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    grid-column: 1/6;
-    grid-row: 8/9;
-    text-align: center;
-    color:#edecec;
-}
-.text_heading_form {
-    font-family: "Roboto Condensed-Regular", sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-}
-.form_box {
-    width: 80%;
-    margin: 0 auto 50px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.form_item {
-    font-family: "Roboto Condensed-Regular", sans-serif;
-    font-weight: 400;
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #edecec;
-    border: 1px;
-    border-radius: 8px;
-    font-size: 18px;
-}
-.button_form {
-    font-family: "Roboto Condensed-Regular", sans-serif;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    border-radius: 20px;
-    padding: 10px 20px;
 }
 
 @media (min-width: 600px) {

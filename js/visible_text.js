@@ -85,3 +85,9 @@ setTimeout(function(){
 setTimeout(function(){
     document.querySelector('.wr').classList.add('ww_visible');
 }, 1900);
+
+
+
+setTimeout(function(){
+    document.querySelector('.watsap_block').classList.add('yellow_color');
+}, 4500);
