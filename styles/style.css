@@ -974,6 +974,9 @@ a {
         margin-top: 0;
         padding: 0;
     }
+    .my_information {
+        padding-top: 50px;
+    }
     .text_me {
         font-family: "Gotham Pro", sans-serif;
         font-weight: 400;

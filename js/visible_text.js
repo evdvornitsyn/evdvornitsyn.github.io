@@ -90,4 +90,4 @@ setTimeout(function(){
 
 setTimeout(function(){
     document.querySelector('.watsap_block').classList.add('yellow_color');
-}, 4500);
+}, 4000);
